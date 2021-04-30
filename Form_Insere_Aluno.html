@@ -1,0 +1,22 @@
+<html>
+    <!-- MARCO ANTONIO RIBEIRO GAMA
+        MAT. 1810478300006-->
+<head>
+    <style>.Err{color:#FF0000}</style>
+</head>
+<body>
+<form action="Insert_Aluno.php" method="POST">
+    <fieldset>
+        <legend>FORMULARIO DE ALUNOS</legend>
+        Matricula:<input type="text" name="MAT"><span class="Err">*<?php echo $Mat_Err?></span><br><br>
+        Nome:<input type="text" name="NOME"><span class="Err">*<?php echo $NOME_Err?></span><br><br>
+        Sobrenome:<input type="text" name="S_NOME"><span class="Err">*<?php echo $S_NOME_Err?></span><br><br>
+        Data nasc:<input type="date" name="DT_NASC"><span class="Err">*<?php echo $DT_NASC_Err?></span><br><br>
+        Telefone:<input type="tel" name="N_TEL">
+        Ceular:<input type="tel" name="N_CEL"><br>
+    </fieldset>
+    <input type="submit" name="submit" value="enviar">
+	<input type="submit" name="submit" value="voltar" formaction="Form Aluno.html">
+</form>
+</body>
+</html>
